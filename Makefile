@@ -12,11 +12,11 @@ BUILD_TIME=`date +%Y%m%d%H%M%S`
 LDFLAGS=-ldflags "-X main.Version=${GITTAG} -X main.Build_Time=${BUILD_TIME} -s -w"
 
 local:
-	rm -f ./bin/qb_web_server
+	rm -f ./bin/server_name
 	go build ${LDFLAGS} -o ${OUTPUT} ${SRC}
 
 web-server:
-	rm -f ./bin/qb_web_server
+	rm -f ./bin/server_name
 	CGO_ENABLED=0 GOOS=linux GOARCH=amd64 go build -tags=jsoniter ${LDFLAGS} -o ${OUTPUT} ${SRC}
 
 clean:

@@ -7,14 +7,10 @@ const (
 	ErrorRidesCode = 3
 
 	//参数签名秘钥
-	DesKey = "r5k1*8a$@8dc!dytkcs2dqz!"
+	DesKey = "fahus!dv*(fasfnjk!#s21mg"
 
 	//redis key
-	RedisKeyRegisteredCode       = "user:registered:code:"        //注册验证码
-	RedisKeyRegisteredCodeNumber = "user:registered:code:number:" //注册验证码次数
-	RedisKeyToken                = "user:login:token:"            //token 缓存
-
-	RedisKeyLoginServer = "user:login:server:list:" //登录服务器
+	RedisKeyToken = "user:login:token:" //token 缓存
 
 	//time
 	FormatTime      = "15:04:05"            //时间格式
