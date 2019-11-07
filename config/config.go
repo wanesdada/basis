@@ -52,20 +52,15 @@ type WssConfig struct {
 
 // Config 配置
 type Config struct {
-	Service    Service   `yaml:"service"`
-	DB         Db        `yaml:"db"`
-	DBTreasure Db        `yaml:"db_treasure"`
-	Redis      Redis     `yaml:"redis"`
-	Log        LogConfig `yaml:"log"`
-	Wss        WssConfig `yaml:"wss"`
+	Service Service   `yaml:"service"`
+	DB      Db        `yaml:"db"`
+	Redis   Redis     `yaml:"redis"`
+	Log     LogConfig `yaml:"log"`
+	Wss     WssConfig `yaml:"wss"`
 }
 
 func GetDb() Db {
 	return config.DB
-}
-
-func GetDBTreasure() Db {
-	return config.DBTreasure
 }
 
 func GetService() Service {

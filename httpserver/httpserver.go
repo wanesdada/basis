@@ -1,9 +1,9 @@
 package httpserver
 
 import (
+	"basis/config"
+	"basis/httpserver/servermiddleware"
 	"github.com/gin-gonic/gin"
-	"qp_web_server/config"
-	"qp_web_server/httpserver/servermiddleware"
 )
 
 func SetupRouter() *gin.Engine {

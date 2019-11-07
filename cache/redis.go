@@ -1,8 +1,8 @@
 package redis
 
 import (
+	"basis/config"
 	"github.com/go-redis/redis/v7"
-	"qp_web_server/config"
 	"time"
 )
 

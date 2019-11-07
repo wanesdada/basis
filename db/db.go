@@ -1,12 +1,12 @@
 package db
 
 import (
+	"basis/config"
+	"basis/util"
 	"fmt"
 	_ "github.com/go-sql-driver/mysql"
 	"github.com/go-xorm/xorm"
 	"log"
-	"qp_web_server/config"
-	"qp_web_server/util"
 	"xorm.io/core"
 )
 

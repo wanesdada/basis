@@ -1,11 +1,11 @@
 package servermiddleware
 
 import (
+	"basis/util"
 	"bytes"
 	"github.com/gin-gonic/gin"
 	"io/ioutil"
 	"net/http"
-	"qp_web_server/util"
 	"time"
 )
 
@@ -61,8 +61,7 @@ func BaseLogger() gin.HandlerFunc {
 				path,
 				comment,
 				string(req),
-				string(blw.body.Bytes(),
-				),
+				string(blw.body.Bytes()),
 			)
 		} else {
 			util.Logger.Infof("[QP WEB SERVER] |%3d|%s|%4s|%s|%s|%s|Req:%s|Resp:%s",

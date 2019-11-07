@@ -1,20 +1,20 @@
 package servermiddleware
 
 import (
+	"basis/module"
+	"basis/util"
 	"bytes"
 	"encoding/base64"
 	"github.com/gin-gonic/gin"
 	"io/ioutil"
 	"net/http"
-	"qp_web_server/module"
-	"qp_web_server/util"
 )
 
 type BaseReq struct {
-	AppVersion    string `form:"app_version" json:"app_version" binding:"required"`
-	AppName       string `form:"app_name" json:"app_name" binding:"required"`
+	AppVersion        string `form:"app_version" json:"app_version" binding:"required"`
+	AppName           string `form:"app_name" json:"app_name" binding:"required"`
 	NumRegisterOrigin int    `form:"num_register_origin" json:"num_register_origin" binding:"required"`
-	MachineID     string `form:"machine_id" json:"machine_id" binding:"required"`
+	MachineID         string `form:"machine_id" json:"machine_id" binding:"required"`
 }
 
 //加密验证

@@ -12,6 +12,5 @@
 *.out
 bin
 logs
-config/config.yml
 .vscode
 .idea

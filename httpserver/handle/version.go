@@ -1,10 +1,10 @@
 package handle
 
 import (
+	"basis/module"
+	"basis/util"
 	"github.com/gin-gonic/gin"
 	"net/http"
-	"qp_web_server/module"
-	"qp_web_server/util"
 )
 
 const version = "qp_server_v1.0.0"
